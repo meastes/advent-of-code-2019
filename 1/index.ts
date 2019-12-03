@@ -1,7 +1,7 @@
-const fs = require('fs');
+import * as fs from 'fs';
 
 function getWeights() {
-  const input = fs.readFileSync('./input.txt').toString();
+  const input = fs.readFileSync(`${__dirname}/input.txt`).toString();
   return input.split('\n').filter((weight) => weight !== '');
 }
 
