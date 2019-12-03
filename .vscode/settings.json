@@ -7,6 +7,9 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
+  "[text]": {
+    "editor.formatOnSave": false
+  },
   "[javascript]": {
     "editor.formatOnSave": true
   },
@@ -19,5 +22,6 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true
-  }
+  },
+  "files.insertFinalNewline": false
 }
