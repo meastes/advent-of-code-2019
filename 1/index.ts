@@ -1,12 +1,12 @@
 import * as fs from 'fs';
 
-function getWeights() {
+function getWeights(): string[] {
   const input = fs.readFileSync(`${__dirname}/input.txt`).toString();
   return input.split('\n').filter((weight) => weight !== '');
 }
 
-function getFuelRequirements(weights) {
-  return weights.map((weight) => Math.floor(weight / 3) - 2);
+function getFuelRequirements(weights: string[]) {
+  return weights.map((weight) => Math.floor(parseInt(weight, 10) / 3) - 2);
 }
 
 const weights = getWeights();
