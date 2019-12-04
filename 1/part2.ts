@@ -2,10 +2,7 @@ import * as fs from 'fs';
 
 function getWeights(): number[] {
   const input = fs.readFileSync(`${__dirname}/input.txt`).toString();
-  return input
-    .split('\n')
-    .filter((weight) => weight !== '')
-    .map((weight) => parseInt(weight, 10));
+  return input.split('\n').map((weight) => parseInt(weight, 10));
 }
 
 function getFuelRequirements(weights: number[]) {
