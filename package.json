@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@types/node": "^12.12.14",
+    "lodash": "^4.17.15",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^12.12.14"
+  },
   "scripts": {
     "start": "ts-node"
   },
